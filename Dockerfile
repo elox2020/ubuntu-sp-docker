@@ -2,7 +2,7 @@ FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && \
     apt install -y openssh-server && \
-    apt install -y python-is-python3
+    apt install -y python3
 
 COPY sshd_config /etc/ssh/
 
